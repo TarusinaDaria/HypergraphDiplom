@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>HypergraphDiplom.Math.Domain</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Domain\HypergraphDiplom.Domain.Extensions\HypergraphDiplom.Domain.Extensions.csproj" />
+		<ProjectReference Include="..\..\Domain\HypergraphDiplom.Domain.Helpers\HypergraphDiplom.Domain.Helpers.csproj" />
+	</ItemGroup>
+
+</Project>
