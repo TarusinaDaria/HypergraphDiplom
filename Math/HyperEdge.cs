@@ -1,14 +1,13 @@
-﻿using HypergraphDiplom.Domain.Helpers.Guarding;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 
-namespace HypergraphDiplom.Math.Domain
-{
-    public sealed class HyperEdge :
+using HypergraphDiplom.Domain.Helpers.Guarding;
+
+namespace HypergraphDiplom.Math;
+
+/// <summary>
+/// 
+/// </summary>
+public sealed class HyperEdge:
     IEquatable<HyperEdge>,
     IEnumerable<int>
 {

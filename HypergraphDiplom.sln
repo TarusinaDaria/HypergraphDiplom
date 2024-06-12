@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HypergraphDiplom", "HypergraphDiplom\HypergraphDiplom.csproj", "{54F9FDD0-9B5A-4C61-832B-32DA5D4BA926}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A32E106A-352C-4CDC-8A48-96AF68A6A1FF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encryptor", "Encryptor", "{58E5DF6C-CF7A-4C8C-936A-AFC1E55B9AE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HypergraphDiplom.Domain.Extensions", "Domain\HypergraphDiplom.Domain.Extensions\HypergraphDiplom.Domain.Extensions.csproj", "{40D0E9AE-3D31-464E-980B-80AB2EC171C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{41782512-4A85-47A1-8983-A4F4B1E1AB27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HypergraphDiplom.Domain.Helpers", "Domain\HypergraphDiplom.Domain.Helpers\HypergraphDiplom.Domain.Helpers.csproj", "{8A4CEF9F-DF2B-4384-8163-A0695F7AECC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Math", "Math", "{E9BC6592-8ECB-434A-8DEC-E20FAE78EF69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HypergraphDiplom.Math", "Math\HypergraphDiplom.Math.csproj", "{1AF5D5B9-937E-419C-A0DE-ED7AD8A33974}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{02C60BF4-266B-4700-BE97-A7FDF29C2A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HypergraphDiplom.Test", "Test\HypergraphDiplom.Test.csproj", "{F8816C8A-04FA-4CD8-B580-858AED522B55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,20 +23,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{54F9FDD0-9B5A-4C61-832B-32DA5D4BA926}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54F9FDD0-9B5A-4C61-832B-32DA5D4BA926}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54F9FDD0-9B5A-4C61-832B-32DA5D4BA926}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54F9FDD0-9B5A-4C61-832B-32DA5D4BA926}.Release|Any CPU.Build.0 = Release|Any CPU
-		{41782512-4A85-47A1-8983-A4F4B1E1AB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41782512-4A85-47A1-8983-A4F4B1E1AB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41782512-4A85-47A1-8983-A4F4B1E1AB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41782512-4A85-47A1-8983-A4F4B1E1AB27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF5D5B9-937E-419C-A0DE-ED7AD8A33974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF5D5B9-937E-419C-A0DE-ED7AD8A33974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF5D5B9-937E-419C-A0DE-ED7AD8A33974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF5D5B9-937E-419C-A0DE-ED7AD8A33974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D0E9AE-3D31-464E-980B-80AB2EC171C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D0E9AE-3D31-464E-980B-80AB2EC171C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D0E9AE-3D31-464E-980B-80AB2EC171C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D0E9AE-3D31-464E-980B-80AB2EC171C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4CEF9F-DF2B-4384-8163-A0695F7AECC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4CEF9F-DF2B-4384-8163-A0695F7AECC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4CEF9F-DF2B-4384-8163-A0695F7AECC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4CEF9F-DF2B-4384-8163-A0695F7AECC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8816C8A-04FA-4CD8-B580-858AED522B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8816C8A-04FA-4CD8-B580-858AED522B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8816C8A-04FA-4CD8-B580-858AED522B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8816C8A-04FA-4CD8-B580-858AED522B55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{41782512-4A85-47A1-8983-A4F4B1E1AB27} = {A32E106A-352C-4CDC-8A48-96AF68A6A1FF}
+		{1AF5D5B9-937E-419C-A0DE-ED7AD8A33974} = {E9BC6592-8ECB-434A-8DEC-E20FAE78EF69}
+		{40D0E9AE-3D31-464E-980B-80AB2EC171C0} = {A32E106A-352C-4CDC-8A48-96AF68A6A1FF}
+		{8A4CEF9F-DF2B-4384-8163-A0695F7AECC8} = {A32E106A-352C-4CDC-8A48-96AF68A6A1FF}
+		{F8816C8A-04FA-4CD8-B580-858AED522B55} = {02C60BF4-266B-4700-BE97-A7FDF29C2A81}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40D52065-DF49-47B6-A2E9-B423EEDB4175}
